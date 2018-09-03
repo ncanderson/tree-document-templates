@@ -1,0 +1,27 @@
+/* Box sizing reset */
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  height: 1312px;
+  width: 1030px;
+  border: 1px solid black;
+}
+
+img {
+  margin: 0;
+}
+
+.hide-element {
+  display: none;
+}
+
+.main-content-wrapper {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
