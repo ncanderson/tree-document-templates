@@ -32,10 +32,10 @@
   height: auto;
 }
 
-
 /* Text dragon drop form container */
 .text-container {
   flex: 3 1 auto;
+  position: relative;
 }
 
 /* Style the text-box for text entry */
@@ -45,4 +45,10 @@
     -webkit-box-sizing: border-box; // Safari/Chrome, other WebKit
     -moz-box-sizing: border-box;    // Firefox, other Gecko
     box-sizing: border-box;         // Opera/IE 8+
+}
+
+.edit-button {
+  position: absolute;
+  top: 0;
+  right: 0;
 }

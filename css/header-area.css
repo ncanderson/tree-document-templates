@@ -1,0 +1,19 @@
+#letter-container {
+  flex: 1;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  border: 5px solid black;
+}
+
+#first-letter-capitalized {
+  margin: auto;
+}
+
+.selected-header-details {
+  flex: 7;
+}
+
+#display-tree-name {
+  font-style: italic;
+}

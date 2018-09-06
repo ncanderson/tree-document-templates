@@ -56,8 +56,7 @@ $(document).ready(function() {
 
   // Handle dropped image
   function handleFile(file, targetImgElement) {
-    // var preview = document.querySelector('img');
-    // var file    = document.getElementById('test-upload').files[0];
+
     var reader  = new FileReader();
 
     reader.addEventListener("load", function () {
