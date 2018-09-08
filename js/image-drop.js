@@ -69,4 +69,15 @@ $(document).ready(function() {
     }
   }
 
+  window.onbeforeprint = function() {
+    for (var i = 0; i < imageDropAreas.length; i++) {
+      $(imageDropAreas[i]).removeClass('dash-border');
+    }
+  };
+  window.onafterprint = function() {
+    for (var i = 0; i < imageDropAreas.length; i++) {
+      $(imageDropAreas[i]).addClass('dash-border');
+    }      
+  };
+
 });

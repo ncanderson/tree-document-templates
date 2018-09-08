@@ -2,8 +2,16 @@
 html {
   box-sizing: border-box;
 }
+
 *, *:before, *:after {
   box-sizing: inherit;
+}
+
+textarea {
+  resize: none;
+  font-family: "Helvetica";
+  font-size: 15px;
+  overflow: hidden;
 }
 
 .printable-area {
@@ -12,10 +20,26 @@ html {
   border: 1px solid black;
   display: flex;
   flex-direction: column;
+  background-image: url('../img/materia-medica-2.jpg');
+  background-size:     cover;
+  background-repeat:   no-repeat;
+  background-position: center center;
 }
 
 img {
-  margin: 0;
+  color: #000;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+h1 {
+  font-weight:bold;
+  font-family: "Verdana";
+}
+
+h3 {
+  font-weight: bold;
+  font-family: "Helvetica";
 }
 
 .hide-element {
@@ -48,9 +72,3 @@ img {
   flex: 7 1 auto;
 }
 
-/*Remove header functionality area for printing*/
-@media print {
-  .main-selection-area {
-    display: none
-  }
-}

@@ -15,6 +15,7 @@
 <link rel="stylesheet" href="css/data-entry-row.css">
 <link rel="stylesheet" href="css/side-bar-column.css">
 <link rel="stylesheet" href="css/header-area.css">
+<link rel="stylesheet" href="css/print.css">
 
 <link rel="stylesheet" href="css/lib/jquery.toolbar.css">
 
@@ -46,13 +47,13 @@
 
     <div class="header-wrapper">
       <div class="selected-header-details">
-        <p id="display-tree-name">Tree Name Will Be Here</p>
-        <p id="tree-details"></p>
+        <h1 id="display-tree-name">Tree Name Will Be Here</h1>
+        <h3 id="tree-details"></h3>
       </div>
 
       <div id="letter-container">
         <div id="first-letter-capitalized">
-          <!-- I will be filled programatically -->
+          <!-- I will be filled programatically -->          
         </div>
       </div>
     </div>
@@ -63,8 +64,8 @@
 
         <!-- Image 1 -->
         <div class="input-container"> 
-          <div id="drop-area" class="img-drop-area data-entry image-entry">
-            <form class="">
+          <div id="drop-area" class="img-drop-area data-entry image-entry dash-border">
+            <form class="image-form">
               <input class="hide-element" type="file" multiple accept="image/*">    
               <img class="uploaded-image" src="" alt="Drag Image Here...">
             </form>
@@ -78,8 +79,8 @@
 
         <!-- Image 2 -->
         <div class="input-container"> 
-          <div id="drop-area" class="img-drop-area data-entry image-entry">
-            <form class="">
+          <div id="drop-area" class="img-drop-area data-entry image-entry dash-border">
+            <form class="image-form">
               <input class="hide-element" type="file" multiple accept="image/*">    
               <img class="uploaded-image" src="" alt="Drag Image Here...">
             </form>
@@ -93,8 +94,8 @@
 
         <!-- Image 3 -->
         <div class="input-container"> 
-          <div id="drop-area" class="img-drop-area data-entry image-entry">
-            <form class="">
+          <div id="drop-area" class="img-drop-area data-entry image-entry dash-border">
+            <form class="image-form">
               <input class="hide-element" type="file" multiple accept="image/*">    
               <img class="uploaded-image" src="" alt="Drag Image Here...">
             </form>
@@ -108,8 +109,8 @@
 
         <!-- Image 4 -->
         <div class="input-container"> 
-          <div id="drop-area" class="img-drop-area data-entry image-entry">
-            <form class="">
+          <div id="drop-area" class="img-drop-area data-entry image-entry dash-border">
+            <form class="image-form">
               <input class="hide-element" type="file" multiple accept="image/*">    
               <img class="uploaded-image" src="" alt="Drag Image Here...">
             </form>
@@ -123,8 +124,8 @@
 
         <!-- Image 5 -->
         <div class="input-container"> 
-          <div id="drop-area" class="img-drop-area data-entry image-entry">
-            <form class="">
+          <div id="drop-area" class="img-drop-area data-entry image-entry dash-border">
+            <form class="image-form">
               <input class="hide-element" type="file" multiple accept="image/*">    
               <img class="uploaded-image" src="" alt="Drag Image Here...">
             </form>
@@ -141,15 +142,15 @@
       <div class="side-bar-wrapper">
 
         <div class="plant-information-flags">
-          <div class="vertical-text" id="nativity"></div>
+          <h1 class="vertical-text" id="nativity"></h1>
         </div>
         
         <div class="plant-information-flags">
-          <div class="vertical-text" id="dominance"></div>
+          <h1 class="vertical-text" id="dominance"></h1>      
         </div>
 
         <div class="plant-information-flags">
-          <div class="vertical-text" id="invasiveness"></div>
+          <h1 class="vertical-text" id="invasiveness"></h1>
         </div>
 
       </div>

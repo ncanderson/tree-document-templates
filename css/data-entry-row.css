@@ -8,10 +8,24 @@
 
 /* Each element in the row of input */
 .input-container > .data-entry {
-  border: 2px dashed #ccc;
   font-family: sans-serif;
-  margin: 10px;
-  padding: 10px;
+}
+
+.dash-border {
+  border: 2px dashed #000000;
+}
+
+.img-drop-area {
+  display: flex;
+  margin: 1px 10px 1px 10px;
+}
+
+/* The form into which the images are loaded */
+.image-form {
+  display: flex;
+  flex: 1 0 auto;
+  width: 230px; 
+  /*height: 230px;*/
 }
 
 /* Image dragon drop form container */
@@ -20,22 +34,21 @@
 }
 /* Style area when image is dragged in */
 #drop-area.highlight {
-  border-color: purple;
+  border-color: #362668;
 }
+
 /* Image that will be dropped */
 .uploaded-image {
-  vertical-align: middle;
-  display: block;
-  max-width: 206px;
-  margin: 0 auto;
-  width: auto;
-  height: auto;
+  object-fit: contain;
+  margin: auto;
+  max-height: 100%;
 }
 
 /* Text dragon drop form container */
 .text-container {
   flex: 3 1 auto;
   position: relative;
+  margin: 10px;
 }
 
 /* Style the text-box for text entry */

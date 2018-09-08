@@ -6,7 +6,8 @@
 
 .vertical-text {
   transform: rotate(90deg);
-  display: flex;
+  display: inline-flex;
   align-items: center;
-  margin: auto;
+  margin: 0 auto;
+  width: 10px;
 }

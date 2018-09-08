@@ -7,7 +7,7 @@ $(document).ready(function() {
 
   for (var i = 0; i < textAreas.length; i++) {
 
-    textAreas[i].addEventListener('blur', textAreaBlur, false);
+//    textAreas[i].addEventListener('blur', textAreaBlur, false);
     textAreas[i].addEventListener('mouseover', textAreaHover, false);
     textAreas[i].addEventListener('mouseout', textAreaDehover, false);
     
@@ -23,7 +23,15 @@ $(document).ready(function() {
   }
 
   function textAreaBlur(e) {
-    
+   
+  $.each($._data($('.text-entry').get(0), 'events'), function() {
+      // iterate registered handler of original
+      $.each(this, function() {
+        console.log(this);  
+        //$('#target').bind(this.type, this.handler);
+    });
+  });
+
     $(e.currentTarget).replaceWith($('<div class="text-entry">' + e.currentTarget.value + '</div>')); 
 
   }
