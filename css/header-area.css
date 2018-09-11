@@ -21,9 +21,13 @@
 
 #display-tree-name {
   font-style: italic;
-  margin-top: 0px;
+  margin: 0px 0px;
+}
+
+#display-common-name {
+  margin: 6px 0px;
 }
 
 #tree-details {
-  margin-top: 0px;
+  margin-top: 8px;
 }

@@ -1,3 +1,12 @@
+<!-- Things to fix:
+
+Make the text boxes take italic text
+Make the number of images selectable
+Make things saveable
+  
+-->
+
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -20,7 +29,7 @@
 <link rel="stylesheet" href="css/lib/jquery.toolbar.css">
 
 <meta charset=utf-8 />
-<title>Tree Journal Template</title>
+<title>Kim Myers - Tree Journal</title>
 <!--[if IE]>
   <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 <![endif]-->
@@ -29,26 +38,31 @@
 
   <div class="main-selection-area">
     <!-- Here is where the text box for the species name and the check boxes for the toggles will go -->
-    Tree Name: <input type="text" id="tree-name" placeholder="Enter tree name here..."><br>
+    Botanical Name: <input type="text" id="tree-name" placeholder="Enter botanical name here..."><br>
+    Common Name: <input type="text" id="common-name" placeholder="Enter common name here..."><br>
     Nativity: <select name="" id="nativity-select">
       <option hidden value="default">Select An Option...</option>
+      <option value=""></option>
       <option value="Native">Native</option>
       <option value="Non-Native">Non-Native</option>
+      <option value="Invasive">Invasive</option>
     </select><br>
     Dominance: <select name="" id="dominance-select">
       <option hidden value="default">Select An Option...</option>
+      <option value=""></option>
       <option value="Non-Dominant">Non-Dominant</option>
       <option value="Dominant">Dominant</option>          
     </select><br>
-    Invasive?: <input type="checkbox" id="invasive-select" value="Invasive"><br>
+    <!-- Invasive?: <input type="checkbox" id="invasive-select" value="Invasive"><br> -->
   </div>
 
   <div class="printable-area">
 
     <div class="header-wrapper">
       <div class="selected-header-details">
-        <h1 id="display-tree-name">Tree Name Will Be Here</h1>
-        <h3 id="tree-details"></h3>
+        <h1 id="display-tree-name"></h1>
+        <h3 id="display-common-name"></h3>
+        <h4 id="tree-details"></h4>
       </div>
 
       <div id="letter-container">
@@ -72,8 +86,7 @@
           </div>
 
           <div class="data-entry text-container">
-            <textarea class="text-entry"></textarea>
-            <span class="btn-toolbar hide-element edit-button"></span>
+            <div class="text-entry" contenteditable=""></div>
           </div>
         </div>
 
@@ -87,8 +100,7 @@
           </div>
 
           <div class="data-entry text-container">
-            <textarea class="text-entry"></textarea>
-            <span class="btn-toolbar hide-element edit-button"></span>
+            <div class="text-entry" contenteditable=""></div>
           </div>
         </div>
 
@@ -102,8 +114,7 @@
           </div>
 
           <div class="data-entry text-container">
-            <textarea class="text-entry"></textarea>
-            <span class="btn-toolbar hide-element edit-button"></span>            
+            <div class="text-entry" contenteditable=""></div>
           </div>
         </div>
 
@@ -117,8 +128,7 @@
           </div>
 
           <div class="data-entry text-container">
-            <textarea class="text-entry"></textarea>
-            <span class="btn-toolbar hide-element edit-button"></span>            
+            <div class="text-entry" contenteditable=""></div>
           </div>
         </div>
 
@@ -132,8 +142,7 @@
           </div>
 
           <div class="data-entry text-container">
-            <textarea class="text-entry"></textarea>
-            <span class="btn-toolbar hide-element edit-button"></span>            
+            <div class="text-entry" contenteditable=""></div>
           </div>
         </div>
 
@@ -149,9 +158,9 @@
           <h1 class="vertical-text" id="dominance"></h1>      
         </div>
 
-        <div class="plant-information-flags">
+<!--         <div class="plant-information-flags">
           <h1 class="vertical-text" id="invasiveness"></h1>
-        </div>
+        </div> -->
 
       </div>
     

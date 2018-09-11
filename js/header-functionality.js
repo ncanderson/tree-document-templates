@@ -6,6 +6,10 @@ $(document).ready(function() {
     $('#display-tree-name').text($('#tree-name').val());
   });
 
+  $('#common-name').blur(function () {
+      $('#display-common-name').text($('#common-name').val());
+  });
+
   // Nativity
   $('#nativity-select').change(function() {
 
