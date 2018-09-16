@@ -13,7 +13,7 @@ html {
   border: 1px solid black;
   display: flex;
   flex-direction: column;
-  background-image: url('../img/materia-medica-2.jpg');
+  background-image: url('../assets/img/materia-medica-2.jpg');
   background-size:     cover;
   background-repeat:   no-repeat;
   background-position: center center;
